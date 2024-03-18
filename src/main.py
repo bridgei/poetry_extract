@@ -83,6 +83,7 @@ def collate_poem_list(par_session, par_url):
     num_poem_pages = int(x[len(x)-1])
 
     print(f'Poem pages = {num_poem_pages}')
+
     for i in range(num_poem_pages):
         if i>0:
             # get next url
@@ -96,6 +97,24 @@ def collate_poem_list(par_session, par_url):
     return(this_list)
 
 
+def write_poem_files(par_poem_data_list, par_type : str = 'txt'):
+    num_files_written = 0
+
+    for this_poem in par_poem_data_list:
+        if len(f'{this_poem.poem_verses}') > 0:
+            print(f'Processing = {this_poem.poem_title}')
+            with open(f'{DATALIB}poems/{this_poem.poem_file}.{par_type}','w') as of:
+                of.write(f'{this_poem.poem_title}\n\n')
+                of.write(f'{this_poem.poem_context}\n\n')
+                of.write(f'{this_poem.poem_verses}\n\n')
+                of.write(f'\n\n{this_poem.poem_url}')
+            of.close()
+            num_files_written = num_files_written + 1
+        else:
+            print(f'Empty File = {poem_data.poem_title} page = {this_link}')
+
+    print(f'Process stopped. Wrote {num_files_written} files')
+
 
 def main (url):
     """For each poem in the index pages, extract its link,
@@ -104,21 +123,27 @@ def main (url):
     this_session = HTMLSession()
 
     poem_links = collate_poem_list(par_session = this_session, par_url=CAT_POETRY_URL)
-
+    num_files_written = 0
+    par_type  = 'txt'
+    poem_data_list = []
     for this_link in poem_links:
         #my_poem_data = Poem_Data
-        poem_data = collate_poem(par_session=this_session, par_url=this_link)
-        if len(f'{poem_data.poem_verses}')>0:
-            print(f'Processing = {poem_data.poem_title}')
-            with open(f'{DATALIB}poems/{poem_data.poem_file}.txt','w') as of:
-                of.write(f'{poem_data.poem_title}\n\n')
-                of.write(f'{poem_data.poem_context}\n\n')
-                of.write(f'{poem_data.poem_verses}\n\n')
-                of.write(f'\n\n{poem_data.poem_url}')
-            of.close()
-        else:
-            print(f'Empty File = {poem_data.poem_title} page = {this_link}')
-    print('stopped')
+        poem_data_list.append(collate_poem(par_session=this_session, par_url=this_link))
+#        if len(f'{poem_data.poem_verses}')>0:
+#            print(f'Processing = {poem_data.poem_title}')
+#            with open(f'{DATALIB}poems/{poem_data.poem_file}.{par_type}','w') as of:
+#                of.write(f'{poem_data.poem_title}\n\n')
+#                of.write(f'{poem_data.poem_context}\n\n')
+#                of.write(f'{poem_data.poem_verses}\n\n')
+#                of.write(f'\n\n{poem_data.poem_url}')
+#            of.close()
+#            num_files_written = num_files_written + 1
+#        else:
+#            print(f'Empty File = {poem_data.poem_title} page = {this_link}')
+    if len(poem_data_list)>0:
+        write_poem_files(poem_data_list, par_type)
+#    print(f'Process stopped. Wrote {num_files_written} files')
+    print('Stopped')
 
 if __name__ ==  "__main__":
   main(URL)
