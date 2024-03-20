@@ -1,0 +1,9 @@
+# Mosaic  
+> A Senryu  inspired by this painting of Mary Alice Eckbo by Thorvald Hellesen. 
+
+In response to Lillian’s challenge here https://dversepoets.com/2023/05/23/an-artist-gets-his-due/.  
+Portrait of a life  
+Glimpsed through time’s broken mirror —  
+Self’s masquerading  
+  
+https://suchness1.wordpress.com/2023/05/26/mosaic/

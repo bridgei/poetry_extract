@@ -1,0 +1,12 @@
+# Mysterious prompts  
+> Then … to make it harder … I tried it as an Elfchen —
+
+Prompted by a challenge to write a poem that includes the word ‘mystery‘. https://ladyjabberwocky.com/2023/05/15/prompt-of-the-week-mystery-and-wonder/ I somehow was reminded of samsara (weird, my mind is)  
+Mystery  
+Great unknown  
+Senses’ subconsciously seduced  
+Self’s sublime search stalls —  
+Rebirth   
+  
+  
+https://suchness1.wordpress.com/2023/05/16/mysterious-prompts/

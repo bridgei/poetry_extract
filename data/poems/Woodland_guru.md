@@ -1,0 +1,51 @@
+# Woodland guru  
+> Just a walk in the park. A ball a dog an old fool.  
+In the woods  
+My guru trots ahead  
+All four legs pottering in mindful harmony.  
+  
+She tests me  
+Leaves her squeaky toy  
+Amongst the slender bluebells there.  
+  
+She hides then  
+The better to see me  
+Peeking around the aged oak tree.  
+  
+In the woods  
+My guru watches  
+Mindfully I deploy my ninja skills.  
+  
+I approach the toy  
+Slipping between  
+Fragile fragrant bluebells.  
+Stepping over   
+Embryonic trees;   
+Miniatures, not yet saplings,  
+They scatter the woodland clearing here.  
+Tender shoots, basking in the sunlight  
+Cascading through the canopy gap,  
+Left by a long passed ancestor,  
+Remembered now only   
+By its rotting stump and boughs  
+A habitat for multitudes.  
+  
+Bending low  
+Midst the nettles now  
+I grasp guru’s squeaky toy; the prize.  
+  
+I bow to guru —triumphant— only to see  
+Just a tree; guruless;  
+She is gone; hiding elsewhere; somewhere.  
+  
+The lesson continues.  
+The proto-saplings nod their gratitude  
+And bluebells smell as bluebells do.  
+My footsteps leave no trace.  
+Gassho to the guru, to the woods.  
+  
+In the woods  
+My guru trots ahead  
+All four legs pottering in mindful harmony.  
+  
+https://suchness1.wordpress.com/2023/05/03/woodland-guru/

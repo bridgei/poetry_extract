@@ -1,0 +1,29 @@
+# Railroaded  
+> Sitting in the garden. I’m surrounded not by the usual sound of nature; thrush, robins and blackbird song. No today it is the sound of chain saw and shredder as contractors clear the green corridor that was. They need to shore-up the railroad’s cutting.  
+Coming for the trees  
+  
+ Today sadness settled in  
+Today they came for the trees  
+They came with chainsaws and shredders  
+With good intentions; environmental measures  
+Good workers, with families and babies to feed  
+Corporations with plans and projects and pressures  
+Lawyers, liabilities and profit and greed  
+  
+They came for the trees  
+So the trains could run  
+So the houses don’t slip   
+Down into the dip; the cutting they built..  
+I felt the screams inside  
+They bit me deep; so I cried;   
+Perhaps its love … or is it guilt?  
+  
+The hawthorn, blackthorn and maple and hornbeam  
+I planted them all; that whole hedgerow   
+A thirty-metre strip, where life could just sit.  
+A squirrel highway  
+Birds love(d) it; raise(d) chicks in it  
+Today is a sad day  
+Today they came for the trees  
+  
+https://suchness1.wordpress.com/2023/05/22/railroaded/

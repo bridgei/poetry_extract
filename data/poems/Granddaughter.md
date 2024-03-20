@@ -1,0 +1,50 @@
+# Granddaughter  
+> Somethings in life are so beautiful, so precious, so damn joyous, that they come out the other side as agonisingly painful. Or maybe that’s just me. I cry.  
+Granddaughter  
+  
+You light my life   
+Your laugh your smile   
+Hugs at night and anytime  
+There was a time I felt  
+That I’d loved all I would  
+But now I know that sweetest joy  
+Of finding your long lost toy  
+Asleep inside my old shoe  
+You lovely rascal you.  
+  
+It breaks my heart this life  
+Sadness stalks each sweet moment  
+Your innocence runs before you  
+Across the playground shrieking in glee  
+Friends in all directions flee  
+Hiding now in joyful play  
+My heart yearns for it to stay this way  
+For your life to be an endless rainbow  
+A miasmic blur of unicorns and fairy tales  
+Yet I know  
+It cannot be so  
+  
+Into your life pain will creep  
+Just as it does with each of us  
+Scarring often far to deep  
+Leaving us wishing for how it was  
+And ever it will be so  
+Sadness stalking from the shadows  
+Even now as evening draws  
+Sadness sits with me and jaws  
+That one day I will not be  
+The one to pick you up and rub your knee  
+  
+Even this love I feel cuts so sharp  
+It dawns on me now that sometime   
+As we walk our paths must diverge  
+There will be a time my child  
+When I cannot walk with you   
+Nor run nor push your swing  
+Nor whizz you down life’s slide  
+This sadness sits sipping tea  
+It is a lovely thing  
+The shadow side of loving deep  
+The laughter that comes before the sleep  
+  
+https://suchness1.wordpress.com/2023/06/24/granddaughter/
