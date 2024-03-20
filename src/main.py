@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
 from dataclasses import dataclass
+from typing import Optional
 import re
 
 IS_VERBOSE = False
@@ -13,13 +14,27 @@ ELLIPSIS_ESCAPE = '\u2026'
 
 
 @dataclass
-class Poem_Data:
+class Poem_Data_old:
     poem_title: str
     poem_verses: str = ''
     poem_context: str = ''
     poem_url: str = ''
     poem_file: str = ''
 
+@dataclass
+class Poem_Data:
+    poem_title: str
+    poem_context: Optional[list] = None
+    poem_verses: list = None
+    poem_url: str = ''
+    poem_file: str = ''
+
+    def as_markdown(self):
+        newline = '  \n'
+        response = f'# {self.poem_title}{newline}' + \
+                        f'> {newline.join(self.poem_context)}{newline}{newline}' + \
+                        f'{newline.join(self.poem_verses)}'
+        return response
 
 def get_poem_context(par_verses: list):
     '''collates contextual text that may or may not accompany a given poem'''
@@ -29,11 +44,11 @@ def get_poem_context(par_verses: list):
         this_context= f'{this_context}{this_item.getText()}\n'
     return this_context
 
-def collate_poem(par_session, par_url):
+def collate_poem_old(par_session, par_url):
     '''Returns the poem_page title and body as a Poem_Data dataclas object'''
 
     this_poem = ''
-    poem_data = Poem_Data
+
     this_title = ''
     this_context = ''
     this_session = par_session
@@ -59,15 +74,18 @@ def collate_poem(par_session, par_url):
     this_title = soup.find_all('title')[0].getText().strip()
     this_title = str(this_title.replace(' – Suchness1',''))
 
-    # Set Poem_Data object
-    poem_data.poem_verses = this_poem
-    poem_data.poem_context = this_context
-    poem_data.poem_title = this_title.strip()
+    # Get sanitised file name
     # Replace any elipsis characters, remove lead/trail spaces and then replace remaining spaces with underscores
-    poem_data.poem_file = (this_title.replace(ELLIPSIS_ESCAPE,'').strip().replace(' ','_')).strip()
+    this_filename = (this_title.replace(ELLIPSIS_ESCAPE, '').strip().replace(' ', '_')).strip()
     # Remove any non-alphanumeric characters (excluding underscores)
-    poem_data.poem_file =    re.sub(ALPHANUMERIC, '', poem_data.poem_file).strip()
-    poem_data.poem_url = par_url
+    this_filename = re.sub(ALPHANUMERIC, '', this_filename).strip()
+
+    # Set Poem_Data object
+    poem_data = Poem_Data_old(poem_verses = this_poem,
+        poem_context = this_context,
+        poem_title = this_title.strip(),
+        poem_file = this_filename,
+        poem_url = par_url)
 
     return poem_data
 
@@ -97,7 +115,7 @@ def collate_poem_list(par_session, par_url):
     return(this_list)
 
 
-def write_poem_file(par_poem_data:Poem_Data, par_type):
+def write_poem_file_old(par_poem_data:Poem_Data, par_type):
 
     title_pfx = { 'txt':'', 'md':'# '}
     context_pfx = { 'txt':'', 'md':'> '}
@@ -139,7 +157,15 @@ def main(par_url, par_file_type):
 
     this_session = HTMLSession()
     this_file_type = par_file_type
+
+
+    a = Poem_Data('my title',['my context line 1','my context line 1'],
+                 poem_verses = ['my verse line 1','my verse line 2'])
+
+    print(a.as_markdown())
+
     my_poems = []
+
     poem_links = collate_poem_list(par_session = this_session, par_url=par_url)
 
     titles = ['fred', 'joe', 'colin']
@@ -147,10 +173,21 @@ def main(par_url, par_file_type):
     a = []
 
     for t in poem_links:
-        write_poem_file(collate_poem(par_session=this_session, par_url=t),par_type = par_file_type)
+        #write_poem_file(collate_poem(par_session=this_session, par_url=t),par_type = par_file_type)
+        #this_poem = collate_poem_old(par_session=this_session, par_url=t)
+        #my_poems.append(this_poem)
+        my_poems.append(collate_poem_old(par_session=this_session, par_url=t))
+        #write_poem_file_old(this_poem, par_type=par_file_type)
+
+    for p in my_poems:
+        write_poem_file_old(p, par_type=par_file_type)
+
+
 
     print('Stopped')
 
 if __name__ ==  "__main__":
+
+
   main(CAT_POETRY_URL, 'txt')
   main(CAT_POETRY_URL, 'md')
