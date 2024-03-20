@@ -1,5 +1,6 @@
 # Turning tides …  
 > My morning walk is a nagging reminder of the impermanence of all things, of nature’s ceaseless appetite for change.  
+
 The tide is turning  
 This ancient wood knows it  
 Feels it deep in its heart  
@@ -50,4 +51,3 @@ In new garb
 Reliant one upon another   
   
   
-https://suchness1.wordpress.com/2023/09/10/turning-tides/

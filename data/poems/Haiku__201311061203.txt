@@ -1,7 +1,7 @@
 Haiku – 20131106-1203
+> If haiku were a novel, it’d be short an sweet —
+> Experimental novel – opening page.
 
-If haiku were a novel, it’d be short an sweet —
-Experimental novel – opening page.
 Baker Street
 dirty boots shuffling
 - mind the gap!Big issue
@@ -18,4 +18,3 @@ Emergency.My running
 Heart pounding mind whirling
 Chasing hope
 
-https://suchness1.wordpress.com/2013/11/06/experimental-novel-opening-page/

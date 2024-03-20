@@ -1,5 +1,6 @@
 # Placeholder for Compassion  
 > Words are pale imitations of experience; of suchness. Do not be fooled by relying upon them.  
+
 My words are empty.  
 They leave you suffering,  
 Though I am here.  
@@ -22,4 +23,3 @@ Seeking truths and justices.
 Returning to you briefly;  
 Tending your wounds with empty concepts.  
   
-https://suchness1.wordpress.com/2023/04/13/compassion-by-proxy/

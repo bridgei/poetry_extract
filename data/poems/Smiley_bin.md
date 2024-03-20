@@ -1,5 +1,6 @@
 # Smiley bin  
 > I seem to see that, for an open mind, there is a beauty everywhere.  
+
 Sunlight on the grit salt bin  
 Bouncing yellow gold.  
 Unseen amidst commuter rush  
@@ -15,4 +16,3 @@ To prise
 Warmth  
 From unwitting bitter coldness.  
   
-https://suchness1.wordpress.com/2015/09/07/smiley-bin/

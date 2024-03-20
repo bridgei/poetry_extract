@@ -1,5 +1,5 @@
 # Fallen friends …  
->   
+
 They stand majestic  
 In the midst of the field  
 These two old birch trees  
@@ -15,4 +15,3 @@ The middle birch’s shape
 Still echoes; crying out to those who see  
 The gap in the canopy.  
   
-https://suchness1.wordpress.com/2023/06/06/fallen-friends/

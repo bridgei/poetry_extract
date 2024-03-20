@@ -1,5 +1,6 @@
 # Following behind …  
 > Every so often a meditation session will present us a jewel. Today for me it excelled. I struggle always with words. I leave this here in gratitude. It is the best [and least] I can do. 🙏  
+
 How is it our body knows more than we do?  
 Here I am stumbling my way along;  
 Struggling with lifelong dysthymia.   
@@ -31,4 +32,3 @@ To ripple out into my day
 How is it that this body knows the way?  
   
   
-https://suchness1.wordpress.com/2023/04/27/following-behind/

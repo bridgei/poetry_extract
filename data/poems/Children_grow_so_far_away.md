@@ -1,5 +1,6 @@
 # Children grow so far away  
 > This man grows away From the child he was …  
+
 This man grows away  
 From the child he was.  
 Once —he knows—   
@@ -37,4 +38,3 @@ Nothing remains; no-one but he,
 And this single savoury memory.  
   
   
-https://suchness1.wordpress.com/2023/05/29/children-grow-so-far-away/

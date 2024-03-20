@@ -1,5 +1,5 @@
 # No longer  
->   
+
 No longer do I sit  
 On the old leather La-Z-boy  
 No longer listen fondly  
@@ -14,4 +14,3 @@ No longer now
 I forget which of us it is  
 No longer does it matter now  
   
-https://suchness1.wordpress.com/2023/07/01/no-longer/

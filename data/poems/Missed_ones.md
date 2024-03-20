@@ -1,5 +1,6 @@
 # Missed ones  
-> Sometimes the simplest things set us off on a bend  
+> Sometimes the simplest things set us off on a bend   
+
 The hoot of an owl deep in the wood  
 Tugs at a chord that rings a bell  
 That stirs a memory  
@@ -11,4 +12,3 @@ This walk in the park
 Now thankfully dark   
 Turned tearful under frosty stars.  
   
-https://suchness1.wordpress.com/2012/11/06/missed-ones/

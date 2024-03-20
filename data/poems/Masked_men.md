@@ -1,7 +1,7 @@
 # Masked men  
-> It was all so very civilised. Picking you up and driving you to the hospital. A little polite chatter here and there. Then off you went with the nurse to settle-in. I recall I sat outside the reception in the cool air for a few minutes; collecting thoughts before getting on with the day. If only we’d both known … what might we have done? 
+> It was all so very civilised. Picking you up and driving you to the hospital. A little polite chatter here and there. Then off you went with the nurse to settle-in. I recall I sat outside the reception in the cool air for a few minutes; collecting thoughts before getting on with the day. If only we’d both known … what might we have done?   
+> It would be my father’s birthday today; were he still here. I miss him these past twelve years still; I suppose I always will.  
 
-It would be my father’s birthday today; were he still here. I miss him these past twelve years still; I suppose I always will.  
 We wore our usual faces  
 The last time we spoke  
 Masks of convenience  
@@ -32,4 +32,3 @@ Sat here alone I sob
 And set aside my mask —  
 For all your happy birthdays lost.  
   
-https://suchness1.wordpress.com/2023/05/28/masked-men/

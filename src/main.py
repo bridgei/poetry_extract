@@ -13,15 +13,12 @@ ALPHANUMERIC = r'[^A-Za-z0-9_]+'
 ELLIPSIS_ESCAPE = '\u2026'
 
 
-@dataclass
-class Poem_Data_old:
-    poem_title: str
-    poem_verses: str = ''
-    poem_context: str = ''
-    poem_url: str = ''
-    poem_file: str = ''
+@dataclass(order=True)
+class Poem_Verse:
+    Poem_Lines: list = None
 
-@dataclass
+
+@dataclass(order=True)
 class Poem_Data:
     poem_title: str
     poem_context: Optional[list] = None
@@ -31,10 +28,35 @@ class Poem_Data:
 
     def as_markdown(self):
         newline = '  \n'
-        response = f'# {self.poem_title}{newline}' + \
-                        f'> {newline.join(self.poem_context)}{newline}{newline}' + \
-                        f'{newline.join(self.poem_verses)}'
+        response = f'# {self.poem_title}{newline}'
+        for c in self.poem_context:
+            if len(c.strip())>0:
+                response = f'{response}> {c}{newline}'
+        response = response + '\n'
+        for v in self.poem_verses:
+            response = f'{response}{newline.join(v)}{newline}{newline}'
         return response
+
+    def as_text(self):
+        newline = '\n'
+        response = f'{self.poem_title}{newline}'
+        for c in self.poem_context:
+            if len(c.strip())>0:
+                response = f'{response}> {c}{newline}'
+        response = response + '\n'
+        for v in self.poem_verses:
+            response = f'{response}{newline.join(v)}{newline}{newline}'
+        return response
+
+def sanitise_filename(par_text) -> str:
+    # Get sanitised file name
+    # Replace any elipsis characters, remove lead/trail spaces and then replace remaining spaces with underscores
+    this_filename=''
+    if len(par_text)>0:
+        this_filename = (par_text.replace(ELLIPSIS_ESCAPE, '').strip().replace(' ', '_')).strip()
+        # Remove any non-alphanumeric characters (excluding underscores)
+        this_filename = re.sub(ALPHANUMERIC, '', this_filename).strip()
+    return this_filename
 
 def get_poem_context(par_verses: list):
     '''collates contextual text that may or may not accompany a given poem'''
@@ -44,13 +66,11 @@ def get_poem_context(par_verses: list):
         this_context= f'{this_context}{this_item.getText()}\n'
     return this_context
 
-def collate_poem_old(par_session, par_url):
+
+def collate_poem(par_session, par_url):
     '''Returns the poem_page title and body as a Poem_Data dataclas object'''
 
     this_poem = ''
-
-    this_title = ''
-    this_context = ''
     this_session = par_session
 
     # get web page
@@ -67,6 +87,12 @@ def collate_poem_old(par_session, par_url):
         for v in these_verses:
             this_poem = f'{this_poem}{v.getText()}'
 
+
+    verses = this_poem.split('\n\n')
+    verse_lines = []
+    for v in verses:
+        verse_lines.append(v.split('\n'))
+
     # Get any none verse content such as poem_page context and-or preambles
     this_context = get_poem_context(these_verses)
 
@@ -74,20 +100,15 @@ def collate_poem_old(par_session, par_url):
     this_title = soup.find_all('title')[0].getText().strip()
     this_title = str(this_title.replace(' – Suchness1',''))
 
-    # Get sanitised file name
-    # Replace any elipsis characters, remove lead/trail spaces and then replace remaining spaces with underscores
-    this_filename = (this_title.replace(ELLIPSIS_ESCAPE, '').strip().replace(' ', '_')).strip()
-    # Remove any non-alphanumeric characters (excluding underscores)
-    this_filename = re.sub(ALPHANUMERIC, '', this_filename).strip()
-
     # Set Poem_Data object
-    poem_data = Poem_Data_old(poem_verses = this_poem,
-        poem_context = this_context,
-        poem_title = this_title.strip(),
-        poem_file = this_filename,
-        poem_url = par_url)
-
+    poem_data = Poem_Data(poem_verses = verse_lines,
+                          poem_context = this_context.split('\n'),
+                          poem_title = this_title.strip(),
+                          poem_file = sanitise_filename(this_title),
+                          poem_url = par_url)
+    #print(poem_data.as_markdown())
     return poem_data
+
 
 
 def collate_poem_list(par_session, par_url):
@@ -115,39 +136,31 @@ def collate_poem_list(par_session, par_url):
     return(this_list)
 
 
-def write_poem_file_old(par_poem_data:Poem_Data, par_type):
+def write_poem_file(par_poem_data:Poem_Data, par_type):
 
-    title_pfx = { 'txt':'', 'md':'# '}
-    context_pfx = { 'txt':'', 'md':'> '}
-    verse_pfx = { 'txt':'', 'md':''}
-    url_pfx = { 'txt':'', 'md':''}
     file_suffix = {'txt': 'txt', 'md': 'md'}
-    newline_tag = {'txt': '\n', 'md': '  \n'}
 
     this_poem = par_poem_data
-    result = False
+    this_filename = f'{this_poem.poem_file}.{file_suffix[par_type]}'
+    result = f'Created -{this_filename}'
     if len(f'{this_poem.poem_verses}') > 0:
         print(f'Processing = {this_poem.poem_title}')
-        this_filename = f'{this_poem.poem_file}.{file_suffix[par_type]}'
+
         with open(f'{DATALIB}poems/{this_filename}','w') as of:
-            of.write(f'{title_pfx[par_type]}{this_poem.poem_title}')
-            of.write(f'{newline_tag[par_type]}')
-            if par_type == 'txt':
-                of.write(f'{newline_tag[par_type]}')
-            if len(this_poem.poem_context)>0:
-                of.write(f'{context_pfx[par_type]}{this_poem.poem_context.strip()}{newline_tag[par_type]}')
-            if len(this_poem.poem_verses) > 0:
-                lines=this_poem.poem_verses.split('\n')
-                for ln in lines:
-                    of.write(f'{verse_pfx[par_type]}{ln}{newline_tag[par_type]}')
-            if len(this_poem.poem_url)>0:
-                of.write(f'{newline_tag[par_type]}{url_pfx[par_type]}{this_poem.poem_url}')
+
+            match par_type:
+                case 'md':
+                    of.write(this_poem.as_markdown())
+                case 'txt':
+                    of.write(this_poem.as_text())
+                case _:
+                    result = f'Unknown type {par_type} for {this_filename}'
+
         of.close()
-        print(f'Created -{this_filename}')
+        #
         #num_files_written = num_files_written + 1
-        result = True
     else:
-        print(f'Empty File = {this_poem.poem_title} page = {this_poem.poem_url}')
+        result = f'Empty File = {this_poem.poem_title} page = {this_poem.poem_url}'
 
     return result
 
@@ -158,33 +171,18 @@ def main(par_url, par_file_type):
     this_session = HTMLSession()
     this_file_type = par_file_type
 
-
-    a = Poem_Data('my title',['my context line 1','my context line 1'],
-                 poem_verses = ['my verse line 1','my verse line 2'])
-
-    print(a.as_markdown())
-
     my_poems = []
 
     poem_links = collate_poem_list(par_session = this_session, par_url=par_url)
 
-    titles = ['fred', 'joe', 'colin']
-    files = ['fred.txt', 'joe.txt', 'colin.txt']
-    a = []
-
     for t in poem_links:
-        #write_poem_file(collate_poem(par_session=this_session, par_url=t),par_type = par_file_type)
-        #this_poem = collate_poem_old(par_session=this_session, par_url=t)
-        #my_poems.append(this_poem)
-        my_poems.append(collate_poem_old(par_session=this_session, par_url=t))
-        #write_poem_file_old(this_poem, par_type=par_file_type)
+        my_poems.append(collate_poem(par_session=this_session, par_url=t))
 
     for p in my_poems:
-        write_poem_file_old(p, par_type=par_file_type)
-
-
+        print(write_poem_file(p, par_type=par_file_type))
 
     print('Stopped')
+
 
 if __name__ ==  "__main__":
 

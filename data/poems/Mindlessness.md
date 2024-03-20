@@ -1,6 +1,6 @@
 # Mindlessness  
+
 Meditation bell  
 Three mindful breaths in-out-in  
 Pavlovian mind  
   
-https://suchness1.wordpress.com/2023/04/29/mindlessness/

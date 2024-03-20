@@ -1,8 +1,7 @@
 # From here I see …  
-> Beggars’ End
+> Beggars’ End  
+> Homelessness is being — or has been depending on when you read this— criminalised by the Conservative government, spurred on by an increasingly right-wing leaning society. Where does that road lead?  
 
-
-Homelessness is being — or has been depending on when you read this— criminalised by the Conservative government, spurred on by an increasingly right-wing leaning society. Where does that road lead?  
 From here I can see the rainbow   
 A trickle of pigeon coloured ribbons   
 A swirling entwining enthralling show  
@@ -40,4 +39,3 @@ Yet a few will see amongst the tattered rags
 A fellow soul fallen hard.  
   
   
-https://suchness1.wordpress.com/2016/09/08/from-here-i-see-from-here-i-can-see-the-rainbow-a/

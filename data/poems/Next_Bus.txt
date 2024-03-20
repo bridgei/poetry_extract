@@ -1,6 +1,6 @@
 Next Bus …
+> Don’t hang around. This bus might be the best bus you’ll ever see. Not perfect, just the best bus you see.
 
-Don’t hang around. This bus might be the best bus you’ll ever see. Not perfect, just the best bus you see.
 The rain drips 
 Bus pulls in
 Queue presses me forward.
@@ -40,4 +40,3 @@ Queue spits me out.
 What if I wait?
 
 
-https://suchness1.wordpress.com/2023/04/30/next-bus/

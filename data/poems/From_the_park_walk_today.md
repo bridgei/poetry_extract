@@ -1,5 +1,6 @@
 # From the park walk today …  
-> The past few days’ storms brought almost constant rain. Now, after the dawn’s drizzle, the sun is shining. I set off following the dog onto the familiar path through the local park land.  
+> The past few days’ storms brought almost constant rain. Now, after the dawn’s drizzle, the sun is shining. I set off following the dog onto the familiar path through the local park land.   
+
 Already I can see damage to more than a few trees, even some fallen ones. Ahead a young beech tree has succumbed to the weight of the rains. Broken, it lies across the path. A fledgling blackbird sits on the gravel amidst broken branches, basking in a pool of morning sunlight. We walk around, dog and I.  
   
 Felled tree  
@@ -18,4 +19,3 @@ Raindrops pattering
   
   
   
-https://suchness1.wordpress.com/2023/07/25/from-the-park-walk-today/

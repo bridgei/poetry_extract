@@ -1,4 +1,5 @@
 # Just a thought inside …  
+
 I’ve come to know   
 There is a moment  
 At a poem’s end  
@@ -7,4 +8,3 @@ Lights a mental cigarette
 And lies there smug  
 All warm inside.  
   
-https://suchness1.wordpress.com/2023/05/05/just-a-thought-inside/

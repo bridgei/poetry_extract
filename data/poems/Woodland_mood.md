@@ -1,5 +1,5 @@
 # Woodland mood  
->   
+
 This woodland walk   
 Its sleepy rhythm  
 Paced by sunbeams  
@@ -18,4 +18,3 @@ Of that whisper of silence
 That pervades all  
 Soothing this troubled heart  
   
-https://suchness1.wordpress.com/2023/08/07/woodland-mood/

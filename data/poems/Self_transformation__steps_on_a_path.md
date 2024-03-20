@@ -1,5 +1,6 @@
 # Self transformation — steps on a path  
-> Meditation isn’t all peace and bliss. Sometimes there is only this …  
+> Meditation isn’t all peace and bliss. Sometimes there is only this …   
+
 Today Mr Irritated came by; taking over mind.  
 He moved in wholesale. His sort often do.   
 His rage announced his arrival.  
@@ -35,4 +36,3 @@ Slumped and snoozing there
 I’m sure I heard him mumbling-low  
 “I’m sorry … I’ve just nowhere else to go”.   
   
-https://suchness1.wordpress.com/2023/04/28/1058/
