@@ -97,53 +97,60 @@ def collate_poem_list(par_session, par_url):
     return(this_list)
 
 
-def write_poem_files(par_poem_data_list, par_type : str = 'txt'):
-    num_files_written = 0
+def write_poem_file(par_poem_data:Poem_Data, par_type):
 
-    for this_poem in par_poem_data_list:
-        if len(f'{this_poem.poem_verses}') > 0:
-            print(f'Processing = {this_poem.poem_title}')
-            with open(f'{DATALIB}poems/{this_poem.poem_file}.{par_type}','w') as of:
-                of.write(f'{this_poem.poem_title}\n\n')
-                of.write(f'{this_poem.poem_context}\n\n')
-                of.write(f'{this_poem.poem_verses}\n\n')
-                of.write(f'\n\n{this_poem.poem_url}')
-            of.close()
-            num_files_written = num_files_written + 1
-        else:
-            print(f'Empty File = {poem_data.poem_title} page = {this_link}')
+    title_pfx = { 'txt':'', 'md':'# '}
+    context_pfx = { 'txt':'', 'md':'> '}
+    verse_pfx = { 'txt':'', 'md':''}
+    url_pfx = { 'txt':'', 'md':''}
+    file_suffix = {'txt': 'txt', 'md': 'md'}
+    newline_tag = {'txt': '\n', 'md': '  \n'}
 
-    print(f'Process stopped. Wrote {num_files_written} files')
+    this_poem = par_poem_data
+    result = False
+    if len(f'{this_poem.poem_verses}') > 0:
+        print(f'Processing = {this_poem.poem_title}')
+        this_filename = f'{this_poem.poem_file}.{file_suffix[par_type]}'
+        with open(f'{DATALIB}poems/{this_filename}','w') as of:
+            of.write(f'{title_pfx[par_type]}{this_poem.poem_title}')
+            of.write(f'{newline_tag[par_type]}')
+            if par_type == 'txt':
+                of.write(f'{newline_tag[par_type]}')
+            if len(this_poem.poem_context)>0:
+                of.write(f'{context_pfx[par_type]}{this_poem.poem_context.strip()}{newline_tag[par_type]}')
+            if len(this_poem.poem_verses) > 0:
+                lines=this_poem.poem_verses.split('\n')
+                for ln in lines:
+                    of.write(f'{verse_pfx[par_type]}{ln}{newline_tag[par_type]}')
+            if len(this_poem.poem_url)>0:
+                of.write(f'{newline_tag[par_type]}{url_pfx[par_type]}{this_poem.poem_url}')
+        of.close()
+        print(f'Created -{this_filename}')
+        #num_files_written = num_files_written + 1
+        result = True
+    else:
+        print(f'Empty File = {this_poem.poem_title} page = {this_poem.poem_url}')
 
+    return result
 
-def main (url):
+def main(par_url, par_file_type):
     """For each poem in the index pages, extract its link,
     then collate the poem and write to a txt file"""
 
     this_session = HTMLSession()
+    this_file_type = par_file_type
+    my_poems = []
+    poem_links = collate_poem_list(par_session = this_session, par_url=par_url)
 
-    poem_links = collate_poem_list(par_session = this_session, par_url=CAT_POETRY_URL)
-    num_files_written = 0
-    par_type  = 'txt'
-    poem_data_list = []
-    for this_link in poem_links:
-        #my_poem_data = Poem_Data
-        poem_data_list.append(collate_poem(par_session=this_session, par_url=this_link))
-#        if len(f'{poem_data.poem_verses}')>0:
-#            print(f'Processing = {poem_data.poem_title}')
-#            with open(f'{DATALIB}poems/{poem_data.poem_file}.{par_type}','w') as of:
-#                of.write(f'{poem_data.poem_title}\n\n')
-#                of.write(f'{poem_data.poem_context}\n\n')
-#                of.write(f'{poem_data.poem_verses}\n\n')
-#                of.write(f'\n\n{poem_data.poem_url}')
-#            of.close()
-#            num_files_written = num_files_written + 1
-#        else:
-#            print(f'Empty File = {poem_data.poem_title} page = {this_link}')
-    if len(poem_data_list)>0:
-        write_poem_files(poem_data_list, par_type)
-#    print(f'Process stopped. Wrote {num_files_written} files')
+    titles = ['fred', 'joe', 'colin']
+    files = ['fred.txt', 'joe.txt', 'colin.txt']
+    a = []
+
+    for t in poem_links:
+        write_poem_file(collate_poem(par_session=this_session, par_url=t),par_type = par_file_type)
+
     print('Stopped')
 
 if __name__ ==  "__main__":
-  main(URL)
+  main(CAT_POETRY_URL, 'txt')
+  main(CAT_POETRY_URL, 'md')
