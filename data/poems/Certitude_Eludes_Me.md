@@ -1,0 +1,39 @@
+# Certitude Eludes Me  
+> I sometimes think they are from a very different universe to me.  
+> We are blessed to live close to a Temple of the Church of Latter Day Saints. I meet such lovely people from exotic places as my dog and I take our walk.  
+
+It was just last week they stopped me.  
+Two girls from far far away.  
+Flashing Latter Day Saints cards   
+With Latter Day Saints smiles.  
+What would I ask god they   
+Seemed to want to know.  
+  
+God? He left this place a long time ago  
+Grabbed his coat and a hackney cab  
+Did a moonlit flit to the costa  
+I hear santa and he get on fine.  
+The LDS girls couldn’t follow this nihilistic path  
+And I didn’t have the heart to disabuse them.  
+  
+Our spiritual paths remain divergent  
+I don’t envy their certitude.  
+Though it’d be such a comfort   
+On cold British mornings (all of them yes)  
+When me, myself and I  
+Sit to face the turmoil within.  
+  
+Reality is a threadbare meditation  
+On living right and helping others  
+On being better today   
+Than yesterday  
+On doing the dishes  
+And cooking the rice  
+  
+If I ever find inner peace   
+For more than fleeting moments  
+Maybe I’d flash their cherub smile too.  
+If there was a creator god father-nanny  
+The question I think I’d ask …  
+“What were you thinking?!”.  
+  
