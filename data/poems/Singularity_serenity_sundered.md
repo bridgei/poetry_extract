@@ -1,5 +1,6 @@
 # Singularity, serenity, sundered!  
 > With a nod to Buddha and Darryl Reanney — from stardust of a singularity we are born; quantum entanglement binds us.  
+
 I remember singularity  
 We were one, complete  
 You and I and them  
@@ -29,4 +30,3 @@ We grope still in darkness
 You for I for them  
   
   
-https://suchness1.wordpress.com/2023/05/01/singularity-serenity-sundered/

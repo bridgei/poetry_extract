@@ -1,5 +1,6 @@
 # Express delivery  
 > Challenging perspective …  
+
 the ironic tragedy of time travel is not that it is unattainable;  
 rather that it is unavoidable.  
   
@@ -8,4 +9,3 @@ we sit powerless and transfixed;
 gazing through smeared windows  
 watching all that we knew dwindle into insigniificance  
   
-https://suchness1.wordpress.com/2013/07/01/express-delivery/

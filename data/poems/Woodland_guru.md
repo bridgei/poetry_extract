@@ -1,5 +1,6 @@
 # Woodland guru  
 > Just a walk in the park. A ball a dog an old fool.  
+
 In the woods  
 My guru trots ahead  
 All four legs pottering in mindful harmony.  
@@ -48,4 +49,3 @@ In the woods
 My guru trots ahead  
 All four legs pottering in mindful harmony.  
   
-https://suchness1.wordpress.com/2023/05/03/woodland-guru/

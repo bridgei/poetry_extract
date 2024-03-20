@@ -1,5 +1,6 @@
 # For the memories …  
 > Autumn has the haunting ability to remind us of impermanence  
+
 September sun  
 Sweeter yet for the passing  
 Of this feeble summer  
@@ -14,4 +15,3 @@ One more time
 Before the looming  
 Of nature’s certain prize.  
   
-https://suchness1.wordpress.com/2015/09/07/for-the-memories/
