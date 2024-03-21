@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from typing import Optional
 import re
 
+
 IS_VERBOSE = False
 BASEURL = 'https://suchness1.wordpress.com/'
 URL = f'{BASEURL}2023/10/29/toadstools-on-a-beech-stump/'
@@ -26,27 +27,92 @@ class Poem_Data:
     poem_url: str = ''
     poem_file: str = ''
 
+    def as_html(self):
+        eol= f'\n'
+        newline = f'<br />{eol}'
+        para = '<p>'
+        parb = '</p>'
+        hdra = '<h1>'
+        hdrb = '</h1>'
+        bqa = '<blockquote>'
+        bqb = '</blockquote>'
+        rule = '<hr>'
+        this_code = "utf-8"
+
+        return self.__output__(eol, newline,
+                                  para, parb,
+                                  hdra, hdrb,
+                                  bqa, bqb)
+
     def as_markdown(self):
-        newline = '  \n'
-        response = f'# {self.poem_title}{newline}'
-        for c in self.poem_context:
-            if len(c.strip())>0:
-                response = f'{response}> {c}{newline}'
-        response = response + '\n'
-        for v in self.poem_verses:
-            response = f'{response}{newline.join(v)}{newline}{newline}'
-        return response
+        eol= f'\n'
+        newline = f'  {eol}'
+        para = ''
+        parb = ''
+        hdra = '# '
+        hdrb = ''
+        bqa = '> '
+        bqb = ''
+        rule = '---'
+
+        return self.__output__(eol, newline,
+                               para, parb,
+                               hdra, hdrb,
+                               bqa, bqb,
+                               rule)
+
 
     def as_text(self):
-        newline = '\n'
-        response = f'{self.poem_title}{newline}'
+        eol = '\n'
+        newline = f'{eol}'
+        para = ''
+        parb = ''
+        hdra = ''
+        hdrb = ''
+        bqa = ''
+        bqb = ''
+        rule = ''
+
+        return self.__output__(eol, newline,
+                               para, parb,
+                               hdra, hdrb,
+                               bqa, bqb,
+                               rule)
+
+    def __output__(self, eol, newline,
+                   para, parb='',
+                   hdra='', hdrb='',
+                   bqa='', bqb='',
+                   rule=''
+                   ):
+
+        this_code = "utf-8"
+
+        # add front matter
+        response = (f'---{eol}tags: {eol}- poetry{eol}Published URL: {self.poem_url}{eol}---{eol}')
+
+        response = f'{response}{rule}{newline}'
+
+        response = f'{response}{newline}{hdra}{self.poem_title}{hdrb}{newline}'
+
+        response = f'{response}{bqa}'
         for c in self.poem_context:
-            if len(c.strip())>0:
-                response = f'{response}> {c}{newline}'
-        response = response + '\n'
+            if len(c.strip()) > 0:
+                response = f'{response}{para}{c}{parb}{newline}'
+        response = f'{response}{bqb}{eol}'
+
+        response = f'{para}{response}{eol}{parb}'
+
         for v in self.poem_verses:
-            response = f'{response}{newline.join(v)}{newline}{newline}'
+        #    v = html.escape(newline.join(verse))
+            response = f'{para}{response}{newline.join(v)}{parb}{newline}{newline}'
+#            response = f'{para}{response}{v}{parb}{newline}{newline}'
+        response = f'{response}{rule}{newline}'
+
+        response = f'{para}{response} --- End of poem ---{parb}'
+
         return response
+
 
 def sanitise_filename(par_text) -> str:
     # Get sanitised file name
@@ -86,7 +152,6 @@ def collate_poem(par_session, par_url):
     if len(these_verses)>0:
         for v in these_verses:
             this_poem = f'{this_poem}{v.getText()}'
-
 
     verses = this_poem.split('\n\n')
     verse_lines = []
@@ -138,7 +203,7 @@ def collate_poem_list(par_session, par_url):
 
 def write_poem_file(par_poem_data:Poem_Data, par_type):
 
-    file_suffix = {'txt': 'txt', 'md': 'md'}
+    file_suffix = {'txt': 'txt', 'md': 'md', 'html': 'html'}
 
     this_poem = par_poem_data
     this_filename = f'{this_poem.poem_file}.{file_suffix[par_type]}'
@@ -153,6 +218,8 @@ def write_poem_file(par_poem_data:Poem_Data, par_type):
                     of.write(this_poem.as_markdown())
                 case 'txt':
                     of.write(this_poem.as_text())
+                case 'html':
+                    of.write(this_poem.as_html())
                 case _:
                     result = f'Unknown type {par_type} for {this_filename}'
 
@@ -187,5 +254,6 @@ def main(par_url, par_file_type):
 if __name__ ==  "__main__":
 
 
-  main(CAT_POETRY_URL, 'txt')
-  main(CAT_POETRY_URL, 'md')
+    main(CAT_POETRY_URL, 'txt')
+    main(CAT_POETRY_URL, 'md')
+    main(CAT_POETRY_URL, 'html')

@@ -1,4 +1,12 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/06/02/heros-lame-lament/
+---
+---  
+  
 # Hero’s lame lament  
+> 
 
 I was supposed to fix things here; to change the world.  
 That’s something I remember.   
@@ -31,3 +39,5 @@ What’ll they do when I get back home!?
 Oh … then there’ll be hell to pay!  
   
   
+---  
+ --- End of poem ---

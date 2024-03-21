@@ -1,6 +1,16 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/04/29/mindlessness/
+---
+---  
+  
 # Mindlessness  
+> 
 
 Meditation bell  
 Three mindful breaths in-out-in  
 Pavlovian mind  
   
+---  
+ --- End of poem ---

@@ -1,4 +1,12 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2000/06/02/haiku-20000602-1814/
+---
+
+
 Haiku 20000602-1814
+
 
 lone sycamore leaf
 curled on the white plastic seat ~
@@ -7,3 +15,5 @@ i brush it aside
 meditating on nature
 thought notices nothing
 
+
+ --- End of poem ---

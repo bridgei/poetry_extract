@@ -1,4 +1,12 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/06/05/morning-sit/
+---
+---  
+  
 # Morning sit  
+> 
 
 Morning sitting  
 Not so much meditation  
@@ -28,3 +36,5 @@ The spectacles on my nose
 A tickle in my throat  
 Raw mundanity abounds.  
   
+---  
+ --- End of poem ---

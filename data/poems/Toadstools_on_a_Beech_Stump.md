@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/10/29/toadstools-on-a-beech-stump/
+---
+---  
+  
 # Toadstools on a Beech Stump  
 > Sometimes a walk in the woods is more than just a walk …  
+
 
 Distant crows  
 Tumbling skyward   
@@ -21,3 +29,5 @@ Path stretches
 Beckoning this heart  
 Tales unfold …  
   
+---  
+ --- End of poem ---

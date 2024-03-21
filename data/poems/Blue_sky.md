@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2015/09/07/blue-sky/
+---
+---  
+  
 # Blue sky  
 > Sit and watch the morning begin sometime; watch it like your first ever morning, your final day break.  
+
 
 Autumnal blue sky  
 Kissing the Pennine moors  
@@ -13,3 +21,5 @@ Stalking the allotment patch
 Striking the dormouse   
 An early morning catch.  
   
+---  
+ --- End of poem ---

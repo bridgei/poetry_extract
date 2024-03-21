@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2015/09/07/in-the-eye-of-chaos/
+---
+---  
+  
 # In the eye of Chaos  
 > How does it feel to sit in the midst of a mental maelstrom?  
+
 
 Stillness rarely falls  
 In this turbulent storm  
@@ -20,3 +28,5 @@ In whispers barely heard.In the eye of the storm is calm;
 The still silent howl of despair,  
 And I yet waiting there.  
   
+---  
+ --- End of poem ---

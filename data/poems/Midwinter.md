@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2013/12/02/midwinter/
+---
+---  
+  
 # Midwinter  
 > Memory is the cruelest master; flee it, shun it, disown it.  
+
 
 December  
 Bleakest of months  
@@ -30,3 +38,5 @@ It is a husk now.
  Stone cold.  
  Irredeemable.  
   
+---  
+ --- End of poem ---

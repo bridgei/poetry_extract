@@ -1,4 +1,12 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/08/07/woodland-mood/
+---
+---  
+  
 # Woodland mood  
+> 
 
 This woodland walk   
 Its sleepy rhythm  
@@ -18,3 +26,5 @@ Of that whisper of silence
 That pervades all  
 Soothing this troubled heart  
   
+---  
+ --- End of poem ---

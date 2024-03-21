@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/04/18/syllable-soup/
+---
+---  
+  
 # Syllable Soup  …  
 > Sometimes we need to set aside words and touch that which is real; with all our senses. No labels, no lies, no incompleteness. Just what is..  
+
 
 Syllables fall, softly settling  
 As does snow on an old oak tree  
@@ -22,3 +30,5 @@ Such is this existence
 Wordless it is real  
 Eternal Suchness  
   
+---  
+ --- End of poem ---
