@@ -1,10 +1,18 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/05/11/by-way-of-response/
+---
+---  
+  
 # By way of response …  
 > Und hier ist es, mein erste elfchen …   
-> W3 Prompt #54: Wea’ve Written Weekly  
-> My introduction to Elfchen — thanks Sadje  
-> I was drawn  —in particular— to this post a poem by Sadje (https://lifeafter50forwomen.com/about-me/) and a seemingly regular competition.  
-> In browsing around I stumbled on this blog — for which, thanks are sent to David (https://skepticskaddish.com/).  
-> So, today I am delighted to learn of a Germanic form of Haiku; the Elfchen. Here I present my first attempt …  
+W3 Prompt #54: Wea’ve Written Weekly  
+My introduction to Elfchen — thanks Sadje  
+I was drawn  —in particular— to this post a poem by Sadje (https://lifeafter50forwomen.com/about-me/) and a seemingly regular competition.  
+In browsing around I stumbled on this blog — for which, thanks are sent to David (https://skepticskaddish.com/).  
+So, today I am delighted to learn of a Germanic form of Haiku; the Elfchen. Here I present my first attempt …  
+
 
 … I …  
 Totality  
@@ -20,3 +28,5 @@ Heart shrinking unease
 Endlessly pursuing pleasure; diversion  
 Sundered  
   
+---  
+ --- End of poem ---

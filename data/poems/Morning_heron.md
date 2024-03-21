@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/09/05/morning-heron/
+---
+---  
+  
 # Morning heron  
 > Another note from my morning park walk with my dog Lola. We were pleased to note the local grey heron once more this morning.  
+
 
 Nearing the lake, this early walk is ending.  
 The grey heron —glimpsed through the bushes in the gloomy dawn light earlier— is on the far shoreline now.  
@@ -16,3 +24,5 @@ Morning heron prowls
 Slow-striding this lake’s shoreline—  
 Pausing we see thus  
   
+---  
+ --- End of poem ---

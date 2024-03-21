@@ -1,7 +1,15 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/05/04/breaking-news/
+---
+---  
+  
 # Breaking News …  
 > ews … Breaking News … Breaking N …  
-> I remember when news didn’t break; it flashed. Came and went. Now it lingers long. Like a lodger.  
-> Manufacturing news for profit is sooper sleazy; it’s all gonna end in tears.  
+I remember when news didn’t break; it flashed. Came and went. Now it lingers long. Like a lodger.  
+Manufacturing news for profit is sooper sleazy; it’s all gonna end in tears.  
+
 
 I recall  
 When the world wasn’t so small.  
@@ -43,3 +51,5 @@ Make it stop; turn it off
 Breaking News music tolling   
 Don’t look Ethel … the ticker’s rolling!  
   
+---  
+ --- End of poem ---

@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2015/09/07/for-the-memories/
+---
+---  
+  
 # For the memories …  
 > Autumn has the haunting ability to remind us of impermanence  
+
 
 September sun  
 Sweeter yet for the passing  
@@ -15,3 +23,5 @@ One more time
 Before the looming  
 Of nature’s certain prize.  
   
+---  
+ --- End of poem ---

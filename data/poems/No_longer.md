@@ -1,4 +1,12 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/07/01/no-longer/
+---
+---  
+  
 # No longer  
+> 
 
 No longer do I sit  
 On the old leather La-Z-boy  
@@ -14,3 +22,5 @@ No longer now
 I forget which of us it is  
 No longer does it matter now  
   
+---  
+ --- End of poem ---

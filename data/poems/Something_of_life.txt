@@ -1,4 +1,12 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2024/01/27/something-of-life/
+---
+
+
 Something of life
+
 
 Adrift we seem
 We are boats on the ocean
@@ -16,3 +24,5 @@ To the core
 To the heart
 To existence
 
+
+ --- End of poem ---

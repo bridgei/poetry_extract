@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/06/24/granddaughter/
+---
+---  
+  
 # Granddaughter  
 > Somethings in life are so beautiful, so precious, so damn joyous, that they come out the other side as agonisingly painful. Or maybe that’s just me. I cry.  
+
 
 Granddaughter  
   
@@ -48,3 +56,5 @@ It is a lovely thing
 The shadow side of loving deep  
 The laughter that comes before the sleep  
   
+---  
+ --- End of poem ---

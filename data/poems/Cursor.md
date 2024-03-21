@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/1999/05/12/cursor/
+---
+---  
+  
 # Cursor …  
 > On just being, or on becoming invisible … ?  
+
 
 I am the space 'twixt  
 You and the shadow on the wall -   
@@ -25,3 +33,5 @@ My life
 A blinking cursor -  
 A pregnant pause  
   
+---  
+ --- End of poem ---

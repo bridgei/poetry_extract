@@ -1,5 +1,13 @@
+---
+tags: 
+- poetry
+Published URL: https://suchness1.wordpress.com/2023/05/21/1344/
+---
+---  
+  
 # In the grinder (reprise)  
 > In which the serpent eats its own tail.  
+
 
 So knowing, yet unknowing   
 How is it I sense  
@@ -53,3 +61,5 @@ Yet not awakened
 There is yet so very far to go  
 And no one to make the trip.   
   
+---  
+ --- End of poem ---
